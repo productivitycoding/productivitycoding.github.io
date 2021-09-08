@@ -3,26 +3,30 @@
   <head>
     <title> Grade Calculator </title>
     <meta content="Grade Calculator" property="og:title" />
-    <meta content="Grade calculator to calculate scores for various classes" property="og:description" />
+    <meta content="Grade calculator to calculate scores for various areas" property="og:description" />
     <link rel="icon" type="image/png" href="https://cdn0.iconfinder.com/data/icons/tutor-icon-set/512/paper_with_A_text-512.png"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Share+Tech">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <h2 id="h21">Welcome to the Grade Calculator! </h2>
+  <p class="top"> We are currently working on refining the formula used to derive the grades. We invite you to test out this calculator to see if the returned grade matches with your Aeries score. If it doesn't, please let us know and give us the parameters uesd, as this can help expand our data set. :)</p>
+  <body id="body">
     <table>
       <tr>
         <td>
-          <label for="firstareaweight">First Area Weight:​</label>
+          <label for="firstareaweight">1st Area Weight:​</label>
         </td>
         <td>
-          <input type = "number" id = "firstclassweight" step = "1">
+          <input type = "number" id = "firstareaweight" step = "1">
         </td>
         <td>
-          <label for = "firstareamax">First Area Max Score:    </label>
+          <label for = "firstareamax">1st Area Max Score:    </label>
         </td>
         <td>
           <input type = "number" id = "firstareamax" step = "1">
         </td>
         <td>
-          <label for = "firstareascore">First Area Score:</label>
+          <label for = "firstareascore">1st Area Score:</label>
         </td>
         <td>
           <input type = "number" id = "firstareascore" step = "1">
@@ -31,19 +35,19 @@
       </tr>
       <tr>
         <td>
-          <label for="secondareaweight">Second Area Weight:</label>
+          <label for="secondareaweight">2nd Area Weight:</label>
         </td>
         <td>
-          <input type = "number" id = "secondclassweight" step = "1">
+          <input type = "number" id = "secondareaweight" step = "1">
         </td>
         <td>
-          <label for = "secondareamax">Second Area Max Score:</label>
+          <label for = "secondareamax">2nd Area Max Score:</label>
         </td>
         <td>
           <input type = "number" id = "secondareamax" step = "1">
         </td>
         <td>
-          <label for = "secondareascore">Second Area Score:</label>
+          <label for = "secondareascore">2nd Area Score:</label>
         </td>
         <td>
           <input type = "number" id = "secondareascore" step = "1">
@@ -52,19 +56,19 @@
       </tr>
       <tr>
         <td>
-          <label for="thirdareaweight">Third Area Weight:</label>
+          <label for="thirdareaweight">3rd Area Weight:</label>
         </td>
         <td>
-          <input type = "number" id = "thirdclassweight" step = "1">
+          <input type = "number" id = "thirdareaweight" step = "1">
         </td>
         <td>
-          <label for = "thirdareamax">Third Area Max Score:</label>
+          <label for = "thirdareamax">3rd Area Max Score:</label>
         </td>
         <td>
           <input type = "number" id = "thirdareamax" step = "1">
         </td>
         <td>
-          <label for = "thirdareascore">Third Area Score:</label>
+          <label for = "thirdareascore">3rd Area Score:</label>
         </td>
         <td>
           <input type = "number" id = "thirdareascore" step = "1">
@@ -73,19 +77,19 @@
       </tr>
       <tr>
         <td>
-          <label for="fourthareaweight">Fourth Area Weight:</label>
+          <label for="fourthareaweight">4th Area Weight:</label>
         </td>
         <td>
-          <input type = "number" id = "fourthclassweight" step = "1">
+          <input type = "number" id = "fourthareaweight" step = "1">
         </td>
         <td>
-          <label for = "fourthareamax">Fourth Area Max Score:</label>
+          <label for = "fourthareamax">4th Area Max Score:</label>
         </td>
         <td>
           <input type = "number" id = "fourthareamax" step = "1">
         </td>
         <td>
-          <label for = "fourthareascore">Fourth Area Score:</label>
+          <label for = "fourthareascore">4th Area Score:</label>
         </td>
         <td>
           <input type = "number" id = "fourthareascore" step = "1">
@@ -97,6 +101,20 @@
           <p id="endScore">Overall Grade:</p>
         </td>
     </table>
+<button onclick="myFunction()">Toggle Dark Mode</button>
+<button onclick="myFunction1()">Toggle Light Mode</button>
+    <script>
+      function myFunction() {
+          document.getElementById('h21').style.color = 'white';
+          document.body.style.backgroundColor = "#393C41";
+          document.getElementById('body').style.color = 'white';
+      }
+      function myFunction1() {
+          document.getElementById('h21').style.color = 'black';
+          document.body.style.backgroundColor = "white";
+          document.getElementById('body').style.color = 'black';
+      }
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
