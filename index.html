@@ -102,18 +102,18 @@
           <p id="endScore">Overall Grade:</p>
         </td>
     </table>
-<button onclick="myFunction()">Toggle Dark Mode</button>
-<button onclick="myFunction1()">Toggle Light Mode</button>
+<button onclick="toggleDark()">Toggle Dark Mode</button>
     <script>
-      function myFunction() {
+      function toggleDark() {
+        if (document.getElementById('h21').style.color === 'black'){
           document.getElementById('h21').style.color = 'white';
           document.body.style.backgroundColor = "#393C41";
           document.getElementById('body').style.color = 'white';
-      }
-      function myFunction1() {
+        } else {
           document.getElementById('h21').style.color = 'black';
           document.body.style.backgroundColor = "white";
           document.getElementById('body').style.color = 'black';
+        }
       }
     </script>
     <script src="script.js"></script>
