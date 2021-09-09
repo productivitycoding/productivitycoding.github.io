@@ -21,3 +21,6 @@ label {
   border-width: 2px;
   float:right;
 }
+p {
+  font-family:Open Sans;
+}
