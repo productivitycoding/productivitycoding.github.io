@@ -17,8 +17,6 @@ function calcStuff1(max1, max2, max3, max4, weight1, weight2, weight3, weight4, 
   weight3 /= 100;
   weight4 /= 100;
   let val = getzero(max1, max2, max3, max4, score1, score2, score3, score4);
-  if (val === 0) {
-    alert(val);
     //calculate normally
     return (weight1*(score1/max1) + weight2*(score2/max2) + weight3*(score3/max3) + weight4 * (score4/max4));
   }
